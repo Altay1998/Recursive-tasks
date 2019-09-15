@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:700,400i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i&display=swap');
-
-.services{
+/*services part*/
+.services,.resume{
     position: relative;
     text-align: center;
     padding-top: 50px;
     background-color: #F5F5F5;
     text-align: center;
 }
-.services::before{
+.services::before,.resume::before{
     content: " ";
     position: absolute;
     top:150px;
-    left: 570px;
+    left: 630px;
     background-color: #cccccc;
     width: 90px;
     height: 2px;
 
 }
-.services::after{
+.services::after,.resume::after{
     content: " ";
     position: absolute;
     top:148px;
-    left: 605px;
+    left: 665px;
     background-color: #808080;
     width: 20px;
     height: 6px;
@@ -36,7 +36,7 @@
     color: #666666;
     font-family: 'Lato', sans-serif;
 }
-.services-writes h2{
+.services-writes h2,.resume h2{
     font-size: 50px;
     font-family: 'Poppins', sans-serif;
     line-height: 50px;
@@ -58,6 +58,10 @@
     border-radius: 5%;
     background-color: #FFFFFF;
 }
+.services h3{
+    color: #333333;
+    font-weight: 700;
+}
 .list-image{
     padding-left: 2px;
     padding-top: 25px;
@@ -69,9 +73,58 @@
     height: 55px;
     left: 40%;
     text-align: center;
+    transition-duration: 0.4s;
+}
+.list-image:hover{
+    background: #222222;
+}
+.list-image:hover i{
+    color: #FFF537;
 }
 .list-image i{
     color: #222222;
     width: 60%;
     height: 40%;
+    transition-duration: 0.4s;
 }
+/* services part*/
+/*start resume part*/
+.skills-list li{
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    columns: #333333;
+    padding: 20px;
+    letter-spacing: 3px;
+}
+.line{
+    
+    position: relative;
+}
+.line .left-line{
+    position: absolute;
+    width: 405px;
+    height: 1px;
+    left: 130px;
+    background-color: #9A9A9A;
+    bottom: 9px;
+}
+.line .right-line{
+    position: absolute;
+    background-color: #9A9A9A;
+    left:  547px;
+    height: 1px;
+    width: 700px;
+    bottom: 9px;
+}
+.line .inner{
+    position: absolute;
+    width: 1%;
+    height: 1px;
+    font-size: 200%;
+    color: #9A9A9A;
+    left: 525px;
+    bottom: 23px;
+}
+/*end resume part*/

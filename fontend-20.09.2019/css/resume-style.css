@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700,400i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i&display=swap');
+
+.resume h2{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 50px;
+    font-weight: 700;
+   color:  #111111;
+}
+.resume::before{
+    content: " ";
+    position: absolute;
+    top:150px;
+    left: 570px;
+    background-color: #cccccc;
+    width: 90px;
+    height: 2px;
+
+}
+.resume::after{
+    content: " ";
+    position: absolute;
+    top:148px;
+    left: 605px;
+    background-color: #808080;
+    width: 20px;
+    height: 6px;
+
+}
